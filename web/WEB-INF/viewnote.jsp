@@ -12,6 +12,9 @@
         <title>View Note</title>
     </head>
     <body>
-        <h1>Ey yo we gone view this shitz</h1>
+        <h1>Title: ${note.title}</h1>
+        <p>Content: ${note.content}</p>
+        <p>${note}</p>
+        <a href="/note" >Edit</a>
     </body>
 </html>
