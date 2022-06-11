@@ -14,7 +14,6 @@
     <body>
         <h1>Title: ${note.title}</h1>
         <p>Content: ${note.content}</p>
-        <p>${note}</p>
         <a href="/Lab4_SimpleNoteKeeper/note">Edit</a>
     </body>
 </html>
