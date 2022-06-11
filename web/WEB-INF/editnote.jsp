@@ -1,10 +1,5 @@
-<%-- 
-    Document   : editnote
-    Created on : Jun 10, 2022, 7:56:42 PM
-    Author     : Matt
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,10 +10,10 @@
         <h1>Edit Note</h1>
         <form method="POST" action="note" id="noteform">
             <label>Title:</label>
-            <input type="text" value="${title}">
+            <input type="text" name="title" value="${title}">
             <br>
             <label>Content:</label>
-            <textarea form ="noteform" value="${content}"></textarea>
+            <textarea form ="noteform" name="content" value="${content}"></textarea>
             <br>
             <br>
             <input type="submit" value="Save">
